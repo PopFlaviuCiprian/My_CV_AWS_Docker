@@ -42,12 +42,15 @@ requirements  - this file contains our dependencies for this project which is Fl
 index.html    - our static website written in html-css 
 
 ### Building the image and containers
-
+- build the image
 ```
-docker build -t my_docker_cv .  (build the image)
-
-docker run --name my_portfolio -d -p 5000:5000 my_docker_cv (running a container named my_portfolio that can be accessed on http://localhost:5000)
-
-docker ps (this command will list the running containers)
-
+docker build -t my_docker_cv . 
+```
+- runs a container named my_portfolio that can be accessed on http://localhost:5000
+```
+docker run --name my_portfolio -d -p 5000:5000 my_docker_cv 
+```
+this command will list the running containers
+```
+docker ps
 ```
