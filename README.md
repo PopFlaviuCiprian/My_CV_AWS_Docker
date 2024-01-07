@@ -50,7 +50,7 @@ docker build -t my_docker_cv .
 ```
 docker run --name my_portfolio -d -p 5000:5000 my_docker_cv 
 ```
-this command will list the running containers
+- this command will list the running containers
 ```
 docker ps
 ```
