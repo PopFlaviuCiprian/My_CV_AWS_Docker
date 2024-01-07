@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #E5E5E5;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* right section styles */
+        .right-section {
+            padding-left: 90px;
+            background-color: #fff;
+        }
+
+        .about-me-profession {    
+            color: black;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 17px;
+            margin-top: 100px;
+        }
+
+        #personName {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 17px;
+            margin-top: 30px;
+        }
+
+        .main-section {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 1250px;
+            margin: 40px auto;
+        }
+
+        .about-me-section {        
+            padding-top: 15px;
+            padding-right: 15px;
+            margin-bottom: 50px;
+        }
+
+        .about-me-section p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #595959;
+        }
+
+        .pro-development {
+            margin: 40px 0 0 0;
+        }
+
+        .block-title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 27px;
+            color: #000000;
+        }
+
+        .projects-section {
+        
+        } 
+
+        .work-experience-section {
+            
+        }
+
+        /* sidebar styles */
+        .sidebar-section {
+            background-color: #1E2939;
+            width: 100%;   
+        }
+
+        .sidebar-section img {
+            margin-top: 40px;
+            width: 100%;
+            height: auto;
+        }
+
+        .sidebar-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: #FFF;
+        }
+
+        .contacts-section, .tech-skills-section {
+            margin-left: 30px;
+        }
+
+        .contacts-section-type {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .contacts-section-value {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #fff;
+        }
+
+        .sidebar-list {
+            color: #fb6d3a;
+            padding-left: 20px;
+        }
+
+        .tech-skills-section ul span {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #fff;
+        }
+    </style>
+    <title>My resume</title>
+</head>
+<body>
+    <!--Containerul in care avem toata pagina web div/div-->
+    <div class="main-section">
+        <!--Main section-->
+        <div class="right-section">
+            <!-- About me section-->
+            <div class="about-me-section">
+                <h3 class="about-me-profession">Junior DevOps Engineer</h3>
+                <h1 id="personName">Pop Flaviu Ciprian</h1>
+
+                <p>
+                    Greetings from the intersection of passion and technology ! 
+                    I am a spirited Junior DevOps Engineer with a flair for turning complex challenges into seamless automated solutions. 
+                    Coming from a dynamic background as a Hardware Automation Engineer, 
+                    I bring a unique blend of technical prowess and a love for innovation to the world of DevOps.
+                </p>
+            </div>
+
+            <!--Professional Development section-->
+            <div class="pro-development">
+                <h2 class="block-title">Professional Development</h2>
+
+                <div>
+                    <!--First school -->
+                <h3>IT School - DevOps - Date: 07.2023 - 01.2024</h3>
+                <ul>
+                    <li>Linux</li><li>Git</li><li>Docker</li><li>Ansible</li><li>Jenkins</li><li>Prometheus</li><li>Grafana</li>
+                    <li>Python</li><li>AWS</li>
+                </ul>
+                </div>
+                
+                <div>
+                    <!--Second School-->
+                <h3>EOS CyberStart - Cybersecurity Training - Date: 09.2023 - 12.2023</h3>
+                <ul>
+                    <li>Kali-Linux</li><li>Cyber Labs -TryHackMe</li><li>Networking</li>
+                </ul>
+                </div>
+                
+                <div>
+                    <!--Third School-->
+                <h3>IT Factory - QA Automation Tester - Date: 09.2022 - 01.2023</h3>
+                <ul>
+                    <li>Python</li><li>Selenium</li><li>Unit Test</li><li>PyTest</li><li>Postman</li><li>BDD-Gerkin</li><li>API Testing</li>
+                </ul>
+                </div>      
+
+            </div>
+            <!--Projects Section-->
+            <div class="projects-section">
+                <h2 class="block-title">Personal Projects</h2>
+
+                <ul>
+		    <li>
+                        <!--Multiple containers runs on 5000/5001/5002/5003 ports-->
+                        <a href="http://86.126.218.228:5000">Here you can access the container directly from the source</a>                                               
+                    </li>
+                    <li>
+                        <a href="https://github.com/PopFlaviuCiprian/My_CV_Docker_containers.git">This CV runs on multiple Docker containers on different ports</a>
+                        <span>--</span>
+                        <span>[ HTML, CSS3, Flask,  Docker Container, Filezilla, SuperPuTTy ]</span>                    
+                    </li>
+                    <li>
+                        <a href="https://github.com/PopFlaviuCiprian/DevOps_2023.git">Web app on Docker Swarm</a>
+                        <span>------</span>
+                        <span>[ Vagrant, Virtual-Box, VS Code, Docker, Docker Compose, Ansible, PowerShell, Putty ]</span>                                       
+                    </li>
+                    <li>
+                        <a href="https://github.com/PopFlaviuCiprian/LAN_Directory_Synch.git">Network backup folder</a>
+                        <span>-------</span>
+                        <span>[ Python, LAN ]</span>                                     
+                    </li>
+                    <li>
+                        <a href="https://github.com/PopFlaviuCiprian/PyTest_Allure_reports.git">Website testing</a>
+                        <span>------</span>
+                        <span>[ Python, Selenium, PyTest, Allure ]</span>                                      
+                    </li>
+                </ul>
+            </div>
+
+            <!--Work experience Section-->
+            <div class="work-experience-section">
+                <h2 class="block-title">Work Experience</h2>
+
+                <div>
+                    <h3>Automation Engineer</h3>
+                    <p>October 2014 - Present</p>
+                    <ul>
+                        <li>Frontend Debugging - Servers, PC, Scanners, Bizerba and Dibal Retail Scales with OS, Industrial Labelers</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--Certification section-->
+            <div>
+                <h2 class="block-title">Certifications</h2>
+                <ul>
+                    <li>
+                        <a href="aici pun linkul dupa ce obtin diploma devops">DevOps</a>
+                    </li>                
+                    <li>
+                        <a href="https://drive.google.com/file/d/1_8P62WfdNwqoVb4bmfXUpvRtQw1LbBVg/view?usp=drive_link">Intensive Course of Cybersecurity</a>                    
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1cLuP9-4Y0HKlcTy5nBtWKb6sm0-zE6Wy/view">QA Automation Tester (Python)</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1CK_BiesbSXfn7HgYPHyaLAdJVB8Im_AK/view">ISTQB Foundation Level Training</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1srmhK-UGRT_pN1uVcKkc40Onl8PChkth/view?usp=drive_link">Introduction to Cybersecurity - Cisco Networking Academy</a>                    
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1pJQ9wbI9TBC8RRQgGqUEz93LQzcCMQ2W/view?usp=drive_link">Introduction to DevOps Tools </a>                   
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--Sidebar section - Bara laterala-->
+        <aside class="sidebar-section">
+            <img src="/static/profile.jpg" alt="My photo">       
+            <!--Contacts section-->
+            <div class="contacts-section">
+                <h2 class="sidebar-title">Contacts</h2>
+                <div>
+                    <span class="contacts-section-type">Mobile:</span>
+                    <a class="contacts-section-value" href="tel:+40728036366">+40 728036366</a>
+                </div>
+                <div>
+                    <span class="contacts-section-type">Email:</span>
+                    <a class="contacts-section-value" href="mailto:flaviuciprianpop@gmail.com">flaviuciprianpop@gmail.com</a>
+                </div>
+            </div>
+            <!--Tech skills section-->
+            <div class="tech-skills-section">
+                <h2 class="sidebar-title">Tech Skills</h2>
+                <ul class="sidebar-list">
+                    <li><span>Linux</span></li>
+                    <li><span>Git</span></li>
+                    <li><span>Docker</span></li>
+                    <li><span>Ansible</span></li>
+                    <li><span>Jenkins</span></li>
+                    <li><span>Python</span></li>
+                    <li><span>AWS</span></li>
+                    <li><span>HTML - CSS3</span></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>  
